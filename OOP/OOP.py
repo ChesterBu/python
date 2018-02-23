@@ -45,15 +45,15 @@ class Chinese:
     # 这是一个中国人类
     dang = 'gcd' #静态属性
 
-    def sui_di_tu_tan():
-        print('朝着墙上就是一口痰')
+    # def sui_di_tu_tan():
+    #     print('朝着墙上就是一口痰')
     
     def cha_dui(self):
         print('插队')
     
 
 print(Chinese.dang) 
-Chinese.sui_di_tu_tan()
+# Chinese.sui_di_tu_tan()
 print(dir(Chinese))
 # print(Chinese.__dict__)
 print(Chinese.__dict__['dang'])
