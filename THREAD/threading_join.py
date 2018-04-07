@@ -1,17 +1,18 @@
 import threading
 import time
 
+
 def music():
     print('listen music')
     time.sleep(3)
     print('music end')
+
 
 def game():
     print('gaming')
     time.sleep(5)
     print('game over')
 
-    
 
 if __name__ == '__main__':
     t1 = threading.Thread(target=music)
@@ -19,7 +20,7 @@ if __name__ == '__main__':
 
     t1.start()
     t2.start()
-   
+
     print('end')
 
     '''
