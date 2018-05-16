@@ -13,5 +13,3 @@ if times == 0:
     print('byebye')
 else:
     print('welcome login')
-
-

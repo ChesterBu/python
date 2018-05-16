@@ -27,7 +27,7 @@ print('_'.join(li))
 
 
 def adder():
-    content = input('plesae input:')
+    content = input('please input:')
     li = content.split('+')
     output = 0
     for item in li:
@@ -36,7 +36,7 @@ def adder():
     return output
 
 
-def lenCounter():
+def len_counter():
     content = input('please input:')
     srt_num = 0
     int_num = 0
@@ -85,5 +85,4 @@ def filters():
     print(content.replace('A','***'))
 
 
-str
-        
+
