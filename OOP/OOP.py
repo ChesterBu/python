@@ -112,6 +112,6 @@ print(dir(a))
 # a1 = Ea('a')
 
 # class Eaa(a1):  #报错
-#     def __init__(self):
-#         super().__init__()
+#     def __init__(self,name):
+#         super().__init__(name)
 
