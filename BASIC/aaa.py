@@ -2,7 +2,6 @@ li = [11, 22, 33, 44, 55, 66, 77, 88, 99, 90]
 dic = {'k1': [], 'k2': []}
 
 if __name__ == '__main__':
-
     for i in li:
         if i > 60:
             dic['k1'].append(i)
