@@ -26,7 +26,39 @@ class Dog:
     def __init__(self, name, gender):
         self.name = name
         self.gender = gender
-
+        print(dir(self)) 
+        '''
+        '__class__', 
+        '__delattr__',
+        '__dict__',
+        '__dir__', 
+        '__doc__', 
+        '__eq__', 
+        '__format__', 
+        '__ge__', 
+        '__getattribute__', 
+        '__gt__', 
+        '__hash__', 
+        '__init__', 
+        '__init_subclass__', 
+        '__le__', 
+        '__lt__', 
+        '__module__',
+        '__ne__', 
+        '__new__', 
+        '__reduce__', 
+        '__reduce_ex__', 
+        '__repr__', 
+        '__setattr__', 
+        '__sizeof__', 
+        '__str__', 
+        '__subclasshook__', 
+        '__weakref__', 
+        以上都为内置私有方法
+        'bark',
+        'gender',
+        'name'
+        '''
     def bark(self):
         print('%s is barking' % self.name)
 
@@ -56,6 +88,7 @@ print(dir(Chinese))
 print(Chinese.__dict__['dang'])
 
 p = Chinese()
+print(dir(p))
 print(p.dang)  # 实例可以调用类属性
 # print(p.sui_di_tu_tan())  #报错
 p.cha_dui()  # 实例可调用
@@ -64,3 +97,9 @@ p.cha_dui()  # 实例可调用
 
 p.dang = 'GCD'  # 相当与给p加了个属性，而不是修改类上的
 print(Chinese.dang)  # gcd
+
+a = {}
+print(dir(a))
+'''
+'__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__setitem__', '__sizeof__', '__str__', '__subclasshook__', 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'
+'''
